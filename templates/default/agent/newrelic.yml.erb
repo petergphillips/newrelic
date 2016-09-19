@@ -112,9 +112,9 @@ common: &default_settings
   # The name of the log file.
   # Default is newrelic_agent.log.
   <% if @resource.logfile.nil? %>
-  log_file: newrelic_agent.log
+  log_file_name: newrelic_agent.log
   <% else %>
-  log_file: <%= @resource.logfile %>
+  log_file_name: <%= @resource.logfile %>
   <% end %>
 
   # The log file directory.
